@@ -1,0 +1,150 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red63\green127\blue95;\red127\green159\blue191;\red106\green62\blue62;\red42\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs28\lang9 package\cf2\b0  DataAssignment2;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Linkedlist \{\cf0\par
+\cf2\tab Node \cf3 head\cf2 ;\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 size\cf2 ;\cf0\par
+\cf2\tab Node \cf3 last\cf2 ;\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  Linkedlist() \{\cf0\par
+\cf2\tab\tab\cf4 // \cf5\b TODO\cf4\b0  Auto-generated constructor stub\cf0\par
+\cf2\tab\tab\cf3 head\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\tab\cf3 size\cf2 =0;\cf0\par
+\cf2\tab\tab\cf3 last\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b void\cf2\b0  addLast(\cf1\b int\cf2\b0  \cf6 value\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\tab\tab Node \cf6 new_node\cf2 =\cf1\b new\cf2\b0  Node();\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 head\cf2 ==\cf1\b null\cf2\b0 )   \cf4 // list empty\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 head\cf2 =\cf6 new_node\cf2 ;  \cf4 // add new node as \ul fisrt\ulnone  node\cf0\par
+\cf2\tab\tab\tab\cf3 last\cf2 =\cf6 new_node\cf2 ;  \cf4 // as it is single node so last will also point to new node\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 last\cf2 .\cf3 next\cf2 =\cf6 new_node\cf2 ;  \cf4 //add new node in last node next section\cf0\par
+\cf2\tab\tab\tab\cf3 last\cf2 =\cf6 new_node\cf2 ;   \cf4 //update last to point to last node\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf3 size\cf2 ++;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab  \cf0\par
+\cf2\tab\cf1\b void\cf2\b0  traverse()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab Node \cf6 temp\cf2 =\cf3 head\cf2 ;  \cf4 //make a reference to point to first node\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 head\cf2  ==\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf7 "list is empty"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf1\b while\cf2\b0 (\cf6 temp\cf2 !=\cf1\b null\cf2\b0 ) \cf4 //traverse beyond last node\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0 (\cf6 temp\cf2 .\cf3 next\cf2 ==\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 temp\cf2 .\cf3 data\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 temp\cf2 .\cf3 data\cf2  +\cf7 " ->"\cf2 ); \cf4 //display data part of node\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\cf6 temp\cf2 =\cf6 temp\cf2 .\cf3 next\cf2 ;  \cf4 //move to next node\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf7 "total nodes in list are :"\cf2 +\cf3 size\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  addFirst(\cf1\b int\cf2\b0  \cf6 value\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab Node \cf6 new_node\cf2 =\cf1\b new\cf2\b0  Node();\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 head\cf2 ==\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 head\cf2 =\cf6 new_node\cf2 ;  \cf4 // add new node as \ul fisrt\ulnone  node//\cf0\par
+\cf2\tab\tab\tab\cf3 last\cf2 =\cf6 new_node\cf2 ; \cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf6 new_node\cf2 .\cf3 next\cf2 =\cf3 head\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf3 head\cf2 =\cf6 new_node\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf3 size\cf2 ++;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  addbetween(\cf1\b int\cf2\b0  \cf6 value\cf2 ,\cf1\b int\cf2\b0  \cf6 pos\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf6 pos\cf2 >\cf3 size\cf2  || \cf3 size\cf2 <2)\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf7 "invalid pos"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab Node \cf6 new_node\cf2 =\cf1\b new\cf2\b0  Node();\cf0\par
+\cf2\tab\tab\tab Node \cf6 temp\cf2 =\cf3 head\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf6 i\cf2 =1;\cf6 i\cf2 <\cf6 pos\cf2 ;\cf6 i\cf2 ++)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf6 temp\cf2 =\cf6 temp\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf6 new_node\cf2 .\cf3 next\cf2 =\cf6 temp\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf6 temp\cf2 .\cf3 next\cf2 =\cf6 new_node\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf3 size\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf4 // used to delete node from start of linked list\cf0\par
+\cf2\tab\tab\tab  \cf1\b public\cf2\b0  Node deleteFirst(\cf1\b int\cf2\b0  \cf6 value\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab         Node \cf6 temp\cf2  = \cf3 head\cf2 ;\cf0\par
+\cf2\tab\tab\tab         \cf3 head\cf2  = \cf3 head\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab         \cf1\b return\cf2\b0  \cf6 temp\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\tab     \cf1\b public\cf2\b0  Node deleteFirst1(\cf1\b int\cf2\b0  \cf6 value\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab         Node \cf6 temp\cf2  = \cf3 head\cf2 ;\cf0\par
+\cf2\tab\tab\tab         \cf3 head\cf2  = \cf3 head\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab         \cf1\b return\cf2\b0  \cf6 temp\cf2 ;\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab     \cf0\par
+\cf2\tab\tab\tab  \cf4 // Use to delete node after particular node\cf0\par
+\cf2\tab\tab\tab     \cf1\b public\cf2\b0  \cf1\b void\cf2\b0  deleteAfter(Node \cf6 after\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab         Node \cf6 temp\cf2  = \cf3 head\cf2 ;\cf0\par
+\cf2\tab\tab\tab         \cf1\b while\cf2\b0  (\cf6 temp\cf2 .\cf3 next\cf2  != \cf1\b null\cf2\b0  && \cf6 temp\cf2 .\cf3 data\cf2  != \cf6 after\cf2 .\cf3 data\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab             \cf6 temp\cf2  = \cf6 temp\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab         \}\cf0\par
+\cf2\tab\tab\tab         \cf1\b if\cf2\b0  (\cf6 temp\cf2 .\cf3 next\cf2  != \cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab             \cf6 temp\cf2 .\cf3 next\cf2  = \cf6 temp\cf2 .\cf3 next\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab     \}\cf0\par
+\cf2\tab\tab\tab  \cf0\par
+\cf2\tab\tab\tab     \cf1\b void\cf2\b0  search(\cf1\b int\cf2\b0  \cf6 i\cf2 )\cf0\par
+\cf2\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b if\cf2\b0 (\cf3 head\cf2 ==\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf7 "list is empty nothing to delete"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab Node \cf6 temp\cf2 =\cf3 head\cf2 ; \cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf1\b boolean\cf2\b0  \cf6 flag\cf2 =\cf1\b false\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf1\b int\cf2\b0  \cf6 count\cf2 =1;\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf1\b while\cf2\b0 (\cf6 temp\cf2 !=\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf1\b if\cf2\b0 (\cf6 temp\cf2 .\cf3 next\cf2  != \cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 temp\cf2 + \cf7 " found at "\cf2 +\cf6 count\cf2  +\cf7 "position"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\tab\cf6 flag\cf2 =\cf1\b true\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\tab\cf1\b break\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\tab\cf6 temp\cf2 =\cf6 temp\cf2 .\cf3 next\cf2 ;\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\tab\cf6 count\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf1\b if\cf2\b0 (!\cf6 flag\cf2 )\cf0\par
+\cf2\tab\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf7 "node with temp = "\cf2 +\cf6 temp\cf2 + \cf7 " not avaailble in list"\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\tab\}\}\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\}\cf0\par
+\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\cf0\par
+\par
+\par
+\par
+\f1\fs22\par
+}
+ 

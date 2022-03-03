@@ -1,0 +1,62 @@
+
+
+
+[5:00 PM] shrikant patil (Guest)
+@GeneratedValue(strategy =GenerationType.IDENTITY)
+ like 1
+
+//[5:02 PM] ruturaj209 (Guest)
+@GeneratedValue(strategy=GenerationType.AUTO)
+ surprised 1 sad 1
+
+
+//[12:06 PM] PGDAC_BATCHA_Sep21
+create  
+
+[12:06 PM] PGDAC_BATCHA_Sep21
+create-drop
+
+[12:06 PM] PGDAC_BATCHA_Sep21
+update
+
+[12:06 PM] PGDAC_BATCHA_Sep21
+validate   -- schemaManagementException
+
+[12:06 PM] PGDAC_BATCHA_Sep21
+none
+
+[12:07 PM] PGDAC_BATCHA_Sep21
+MySQL5InnoDBDialect
+
+//<property name="show_sql">true</property>
+
+//[12:59 PM] PGDAC_BATCHA_Sep21
+<dependency>
+<groupId>org.ehcache</groupId>
+<artifactId>ehcache</artifactId>
+<version>3.9.9</version>
+</dependency>
+
+//[1:23 PM] PGDAC_BATCHA_Sep21
+<dependency>
+<groupId>org.hibernate.javax.persistence</groupId>
+<artifactId>hibernate-jpa-2.1-api</artifactId>
+<version>1.0.0.Final</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.ehcache/ehcache -->
+<!-- https://mvnrepository.com/artifact/net.sf.ehcache/ehcache -->
+<dependency>
+<groupId>net.sf.ehcache</groupId>
+<artifactId>ehcache</artifactId>
+<version>2.10.9.2</version>
+</dependency>
+Maven Repository: org.ehcache » ehcache
+
+[1:24 PM] PGDAC_BATCHA_Sep21
+<property name="cache.use_second_level_cache">true</property>
+<property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+
+
+
+
+

@@ -1,0 +1,11 @@
+use cdac2;
+show tables;
+select *,concat(first_name,'',last_name) fullname from employees;
+select *,concat(first_name,'',last_name) "First Name","Last Name" from employees;
+select distinct department_id from employees;
+select* from employees order by first_name desc;
+SELECT first_name, last_name, salary, salary*.12 PF from employees;
+select employee_id,first_name,last_name from employees order by salary asc;
+select sum(SALARY) from employees;
+select* from employees where salary between 10000 and 20000 order by salary desc;
+select* from employees where department_id=30 and 40 and 50;

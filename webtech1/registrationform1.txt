@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1> Registration form</h1>
+
+<form>
+Username <input type="text" 
+    name="user"
+    placeholder="enter name"
+    required /><br>
+
+password <input type="password" name="n2" minlength=6 max=10  required /> <br>
+Email <input type="email" name="email"/><br>
+Date of birth<input type="date" name="dob"/><br>
+Mobile<input type="number" name="mobile"/><br>
+Gender
+Male<input type="radio"   name="gender"/>
+FeMale<input type="radio" name="gender"/><br>
+I agree<input type="checkbox" />
+
+Address <textarea rows=5 cols=10> 
+   </textarea>
+
+<select name="area">
+
+<option value="1"> Delhi</option>
+<option value="2"> NewDelhi</option>
+<option value="3"> Noida</option>
+<option value="4"> faridabad</option>
+<option value="5"> haridwar</option>
+</select>
+<input type="button" value="button"/>
+<input type="submit" value="send"/>
+<input type="reset" value="clear"/>
+
+
+
+</form>
+
+</body>
+</html>

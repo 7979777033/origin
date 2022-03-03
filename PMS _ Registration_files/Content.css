@@ -1,0 +1,494 @@
+﻿body {
+}
+.headingline 
+{
+    
+	border-bottom: 1px #BBBBBB dashed;
+	margin: 5px 20px 0px 20px;
+}
+.labelsmall 
+{
+   font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+    font-weight:bold;
+	color: #8C0209;
+}
+.labelmessage 
+{
+   font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+    font-weight:normal ;
+	color: #8C0209;
+}
+.listbox
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+    font-weight:bold ;
+	color: #8C0209;
+	border: 1px solid #CA8186;
+	width:100px;
+}
+.workingarea
+{
+ 
+   /* height: 690px;*/
+    width:982px;
+   border: 1px #BBBBBB dashed;
+   min-height :450px;
+    /*height: 587px;*/
+}
+.Registerworkingarea
+{
+ 
+   /* height: 690px;*/
+    width:982px;
+   border: 1px #BBBBBB dashed;
+   min-height :655px;
+    /*height: 587px;*/
+}
+.btnStyle
+{
+  color:#000000;   
+
+  font: bold 90% Arial, Helvetica, sans-serif;  
+
+  background-color:#539ECA; /*#007CD3;*/
+
+  border:solid 1px #8E001C;
+
+  cursor: pointer;
+
+  background:url("images/bk_button.png") repeat-x left top;
+
+  margin-left: 2px;
+
+  margin-right: 2px;
+  
+  height:26px;
+  width:50px;
+}
+.disablebtnStyle
+{
+  color:#000000;   
+
+  font: bold 90% Arial, Helvetica, sans-serif;  
+
+  background-color:#539ECA; /*#007CD3;*/
+
+  border:solid 1px gray;
+
+  cursor: pointer;
+
+  background:url("images/dis_bk_button.png") repeat-x left top;
+
+  margin-left: 2px;
+
+  margin-right: 2px;
+  
+  height:26px;
+  width:50px;
+}
+.checked
+{
+     width: 15px;  
+     height: 15px;   
+     padding: 0px;
+     background: url(images/checked.png) no-repeat;
+
+     display: block;
+     clear: left;
+
+}
+.unchecked
+{
+     width: 15px;  
+     height: 15px;   
+     padding: 0px;
+     background: url(images/unchecked.png) no-repeat;
+     display: block;
+     clear: left;
+     
+}
+
+.fileuploadstyle
+{
+  color:#000000;   
+
+  font: bold 90% Arial, Helvetica, sans-serif;  
+
+  background-color:#539ECA; /*#007CD3;*/
+
+  border:solid 1px #8E001C;
+
+  cursor: pointer;
+
+  background:url("images/bk_button.png") repeat-x left top;
+
+  margin-left: 2px;
+
+  margin-right: 2px;
+  
+  height:27px;
+
+}
+.gridheader
+{
+    color:#8D001C;
+    border:solid 1px #EAEAEA;
+    border-collapse:collapse;
+}
+.itemstyle
+{
+    border:solid 1px #EAEAEA;
+}
+#sidebarmaster1 {
+	float: left;
+
+}
+
+
+
+#sidebarmaster2 {
+	float: right;
+}
+.sidebarmaster {
+	float: left;
+	width: 230px;
+	padding: 0;
+	font-size: 12px;
+	border:1px solid green;
+
+	
+}
+
+.sidebarmaster ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align:top;
+	
+}
+
+.sidebarmaster li 
+{
+
+	padding: 0 0 20px 0;
+}
+
+.sidebarmaster li ul {
+}
+
+.sidebarmaster li li {
+	margin: 0 5px 0 15px;
+	padding: 8px 0px;
+	border-bottom: 1px #BBBBBB dashed;
+	
+}
+
+
+.sidebarmaster li h2 {
+	height: 30px;
+	margin: 0 0 0 0;
+	padding: 7px 15px 0px 15px;
+	background:  url(images/img05.png) no-repeat left top;
+	letter-spacing: -1px;
+	font-size: 14px;
+	color: #FFFFFF;
+	
+}
+
+.sidebarmaster a 
+{
+    outline :none;
+}
+/*master menu*/
+#mastermenu {
+	width: 970px;
+	margin: 0 auto;
+	padding: 0;
+	height: 32px;
+	
+	
+}
+
+#mastermenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+#mastermenu li {
+	display: inline;
+}
+
+#mastermenu a {
+	display: block;
+	
+	height: 32px;
+	margin: 0;
+	padding: 10px 10px 0px 10px;
+	text-decoration: none;
+	text-transform: capitalize;
+	
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight :bold;
+	color: #FFFFFF;
+	outline :none;
+	
+}
+.logoutlink
+{
+    float:right;
+display: block;
+	
+	height: 32px;
+	margin: 0;
+	padding: 10px 24px 2px 23px;
+
+	text-decoration: none;
+	text-transform: capitalize;
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight :bold;
+	color: #FFFFFF;
+	outline :none;
+}
+.menulinks
+{
+    float:left;
+  outline:none;
+  background: url(images/img03.jpg) no-repeat right top;
+}
+
+#mastermenu a:hover {
+	color: #FFFFFF;
+}
+
+#mastermenu .current_page_item a {
+	color: #FFFFFF;
+}
+
+.search
+{
+     margin-left: 1px;
+    margin-right: 0px;
+    margin-top: 5px;
+    outline:none;
+}
+.tableheader
+{
+  float:none;
+  outline:none;
+  background: url(images/headerg.png) no-repeat left top;
+  height:23px;
+  text-decoration:underline;
+  color:#8D001C;
+  padding-left :15px;
+  width:960px;
+
+}
+.tableheadercontinue
+{
+  float:none;
+  outline:none;
+  background: url(images/header_continue.PNG) no-repeat left top;
+  height:23px;
+  text-decoration:underline;
+  color:#8D001C;
+  padding-left :15px;
+  width:960px;
+  padding :0 0 0 0;
+
+}
+.gridtextboxstyle
+{
+    padding: 2px 2px;
+	
+	border: 1px solid #CA8186;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	font-size: 12px;
+	color: #000000;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-top: 10px;
+     resize:none;
+     height:10px;
+    
+    }
+.span
+{
+    text-align:right;
+    }
+   .watermarked
+    {
+        color :Gray ;
+    }
+    .watermarked_multiline
+    {
+
+        color :Gray ;
+        resize:none;
+         	width:200px;
+         	height:60px;
+         	border:Solid 1px #CA8186;
+         	overflow :auto
+    }
+.tip2 {
+  position: relative;
+  text-decoration: none;
+}
+.tip2 span {display: none;}
+.tip2:hover span {
+  display: block;
+  position: absolute; 
+  padding: .5em;
+  content: attr(title);
+  min-width: 120px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  top: -32px;
+  background: rgba(219,219,219,.8);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+	filter: alpha(opacity=80);
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;    
+  color: #8d001c;
+  font-size: .86em;
+  font-weight:bold;
+}
+.tip2:hover span:after {
+  position: absolute;
+  display: block;
+  content: "";  
+  border-color: rgba(219,219,219,.8) transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom: -16px;
+  left:1em;
+}
+.info
+{
+   background:url(images/info.PNG) no-repeat left top;
+ 
+}
+    
+.srno
+{
+    font-size:11.0pt;
+     font-family:Book Antiqua;
+    color:navy;
+    border: solid navy 1.0pt; 
+        background: #D1D1FF; 
+      padding: 0cm 5.4pt 0cm 5.4pt; 
+}
+.srnoheader
+{
+    width: 26.3pt;
+     border: solid navy 1.0pt; 
+        background: #D1D1FF; 
+      padding: 0cm 5.4pt 0cm 5.4pt; 
+      height: 53.0pt;
+      width:35px;
+}
+
+.Modulename
+{
+ font-size:11.0pt;
+ font-family:Book Antiqua;
+ color:navy;
+
+}
+.ModuleNameheader
+{
+    width: 342.25pt;
+    border: solid navy 1.0pt;
+    border-left: none;
+    background: #D1D1FF;
+    padding: 0cm 5.4pt 0cm 5.4pt;
+    height: 53.0pt; 
+    width:456px;
+     font-family:Book Antiqua;
+    color:navy;
+}
+
+
+.maxmarksheader
+{
+    width: 76.55pt; 
+    border: solid navy 1.0pt;
+     border-left: none;
+     
+       font-family:Book Antiqua;
+        color:navy;
+       background: #D1D1FF;
+        padding: 0cm 5.4pt 0cm 5.4pt; 
+        height: 53.0pt
+                 /*  width="102"*/
+}
+
+.minmarksheader
+{
+    width: 75.15pt;
+    border: solid navy 1.0pt;
+    border-left: none; 
+    background: #D1D1FF; 
+    padding: 0cm 5.4pt 0cm 5.4pt;
+    height: 53.0pt;
+    font-family:Book Antiqua;
+    color:navy;
+    
+              /*     width="100*/
+}
+
+.maxmarks
+{
+    width:76.55pt;
+    border-top:none;
+    border-left:none;
+    border-bottom:solid silver 1.0pt;
+    border-right:solid navy 1.0pt;
+    font-family:Book Antiqua;
+    color:navy;
+     padding:0cm 5.4pt 0cm 5.4pt;
+     height:28.8pt;
+    /*width="102*/
+}
+
+.minmarks
+{
+    width:75.15pt;
+    border-top:none;
+    border-left:none;
+    border-bottom:solid silver 1.0pt;
+    border-right:solid navy 1.0pt;
+    padding:0cm 5.4pt 0cm 5.4pt;
+    height:28.8pt;
+    font-family:Book Antiqua;
+    color:navy;
+ /*width="100*/
+}
+
+ .ModalPopupBG
+    {
+        background-color: #666699;
+        filter: alpha(opacity=50);
+        opacity: 0.7;
+    }
+
+    .CompanyCRDPopup
+    {
+        min-width:200px;
+        min-height:150px;
+        background:white;
+    }

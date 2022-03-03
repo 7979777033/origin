@@ -1,0 +1,215 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red63\green127\blue95;\red42\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs28\lang9 package\cf2\b0  Array_Assignment1;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Array \{\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 capacity\cf2 ; \cf0\par
+\cf2\tab\cf1\b int\cf2\b0 [] \cf3 arr\cf2 ; \cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 size\cf2 ; \cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  Array()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 capacity\cf2 =5;\cf0\par
+\cf2\tab\cf3 arr\cf2 =\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf3 capacity\cf2 ];\cf0\par
+\cf2\tab\cf3 size\cf2 =0;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  Array(\cf1\b int\cf2\b0  \cf4 c\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 capacity\cf2 =\cf4 c\cf2 ;\cf0\par
+\cf2\tab\cf3 arr\cf2 =\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf3 capacity\cf2 ];\cf0\par
+\cf2\tab\cf3 size\cf2 =0;\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b void\cf2\b0  add(\cf1\b int\cf2\b0  \cf4 x\cf2 ) \cf5 // add at the end one element\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf3 size\cf2 <\cf3 capacity\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 arr\cf2 [\cf3 size\cf2 ]=\cf4 x\cf2 ;\cf0\par
+\cf2\tab\cf3 size\cf2 ++;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b else\cf0\b0\par
+\cf2\tab\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "can't insert new elements"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b void\cf2\b0  display()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "["\cf2 );\cf0\par
+\cf2\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf4 i\cf2 =0;\cf4 i\cf2 <\cf3 capacity\cf2 ;\cf4 i\cf2 ++)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 " "\cf2 +\cf3 arr\cf2 [\cf4 i\cf2 ]);\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "]"\cf2 );\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b int\cf2\b0  count()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b return\cf2\b0  \cf3 size\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b void\cf2\b0  remove()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf3 size\cf2 !=-1)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 arr\cf2 [\cf3 size\cf2 -1]=0;\cf0\par
+\cf2\tab\cf3 size\cf2 --;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b else\cf0\b0\par
+\cf2\tab\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "can't delete array empty"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b void\cf2\b0  insertbetween(\cf1\b int\cf2\b0  \cf4 pos\cf2 ,\cf1\b int\cf2\b0  \cf4 data\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf3 size\cf2 <\cf3 capacity\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf4 i\cf2 =\cf3 size\cf2 ;\cf4 i\cf2 >\cf4 pos\cf2 ;\cf4 i\cf2 --)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 arr\cf2 [\cf4 i\cf2 ]=\cf3 arr\cf2 [\cf4 i\cf2 -1];\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf3 arr\cf2 [\cf4 pos\cf2 ]=\cf4 data\cf2 ;\cf0\par
+\cf2\tab\cf3 size\cf2 ++;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b else\cf0\b0\par
+\cf2\tab\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "can't insert new elements"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\cf1\b void\cf2\b0  deletebetween(\cf1\b int\cf2\b0  \cf4 pos\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf4 pos\cf2 >-1||\cf4 pos\cf2 <\cf3 size\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b if\cf2\b0 (\cf3 size\cf2 ==1)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 arr\cf2 [0]=0;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b else\cf0\b0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf4 i\cf2 =\cf4 pos\cf2 ;\cf4 i\cf2 <\cf3 size\cf2 ;\cf4 i\cf2 ++)\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\cf3 arr\cf2 [\cf4 i\cf2 ]=\cf3 arr\cf2 [\cf4 i\cf2 +1];\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf3 size\cf2 --;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b else\cf0\b0\par
+\cf2\tab\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "can't delete array empty"\cf2 );\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  reverse()\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf4 t\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf4 i\cf2 =0; \cf4 i\cf2 <(\cf3 size\cf2 /2);\cf4 i\cf2 ++)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf4 t\cf2 =\cf3 arr\cf2 [\cf4 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf4 i\cf2 ]=\cf3 arr\cf2 [\cf3 size\cf2 -\cf4 i\cf2 -1];\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf3 size\cf2 -1-\cf4 i\cf2 ]=\cf4 t\cf2 ;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  arrayconcate(Array \cf4 a\cf2 , Array \cf4 b\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab Array \cf4\ul c\cf2\ulnone = \cf1\b new\cf2\b0  Array(\cf4 a\cf2 .\cf3 size\cf2 +\cf4 b\cf2 .\cf3 size\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf4 a\cf2 .\cf3 size\cf2 ==0 && \cf4 b\cf2 .\cf3 size\cf2 ==0) \{\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array is empty"\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf4 a\cf2 .\cf3 size\cf2 !=0 && \cf4 b\cf2 .\cf3 size\cf2 ==0) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b int\cf2\b0  \cf4 c1\cf2  []=\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf4 a\cf2 .\cf3 size\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf4 i\cf2 =0;\cf4 i\cf2 <\cf4 a\cf2 .\cf3 size\cf2 ;\cf4 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf4 c1\cf2 [\cf4 i\cf2 ]=\cf4 a\cf2 .\cf3 arr\cf2 [\cf4 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\tab\cf3 size\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 c1\cf2 [\cf4 i\cf2 ]);\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf4 a\cf2 .\cf3 size\cf2 ==0 && \cf4 b\cf2 .\cf3 size\cf2  !=0) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b int\cf2\b0  \cf4 c1\cf2 []=\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf4 b\cf2 .\cf3 size\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf4 i\cf2 =0;\cf4 i\cf2 <\cf4 b\cf2 .\cf3 size\cf2 ;\cf4\ul i\cf2 ++\ulnone )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf4 c1\cf2 [\cf4 i\cf2 ]=\cf4 b\cf2 .\cf3 arr\cf2 [\cf4 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b return\cf2\b0 ;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  sort() \{\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf4 i\cf2 =0; \cf4 i\cf2 <\cf3 size\cf2 -1; \cf4 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf4 j\cf2 =0; \cf4 j\cf2 <\cf3 size\cf2 -\cf4 i\cf2 -1; \cf4 j\cf2 ++) \cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0  (\cf3 arr\cf2 [\cf4 j\cf2 ] > \cf3 arr\cf2 [\cf4 j\cf2 +1])\cf0\par
+\cf2\tab\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf3 arr\cf2 [\cf4 j\cf2 ]=\cf3 arr\cf2 [\cf4 j\cf2 ]+\cf3 arr\cf2 [\cf4 j\cf2 +1];\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf3 arr\cf2 [\cf4 j\cf2 +1]=\cf3 arr\cf2 [\cf4 j\cf2 ]-\cf3 arr\cf2 [\cf4 j\cf2 +1];\cf0\par
+\cf2\tab\tab\tab\tab\tab\cf3 arr\cf2 [\cf4 j\cf2 ]=\cf3 arr\cf2 [\cf4 j\cf2 ]+\cf3 arr\cf2 [\cf4 j\cf2 +1];\cf0\par
+\cf2\tab\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab  \cf1\b int\cf2\b0  sum(Array \cf4 a\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\cf1\b int\cf2\b0  \cf4 sum\cf2 =0;\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf4 i\cf2 =0; \cf4 i\cf2 <\cf4 a\cf2 .\cf3 size\cf2 ;\cf4 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf4 sum\cf2 =\cf4 sum\cf2 +\cf4 a\cf2 .\cf3 arr\cf2 [\cf4 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b return\cf2\b0  \cf4 sum\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\tab  \cf1\b float\cf2\b0  Avg(Array \cf4 a\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab  \cf1\b float\cf2\b0  \cf4 Avg\cf2 =0;\cf0\par
+\cf2\tab\tab\tab  \cf1\b int\cf2\b0  \cf4 sum\cf2 =0;\cf0\par
+\cf2\tab\tab\tab  \cf1\b for\cf2\b0  (\cf1\b int\cf2\b0  \cf4 i\cf2 =0;\cf4 i\cf2 <\cf4 a\cf2 .\cf3 size\cf2 ;\cf4 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab  \cf4 sum\cf2 =\cf4 sum\cf2 +\cf4 a\cf2 .\cf3 arr\cf2 [\cf4 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab  \}\cf0\par
+\cf2\tab\tab\tab  \cf4 Avg\cf2 =(\cf4 sum\cf2 /\cf4 a\cf2 .\cf3 size\cf2 );\cf0\par
+\cf2\tab\tab\tab  \cf1\b return\cf2\b0  \cf4 Avg\cf2 ;\cf0\par
+\cf2\tab\tab\tab  \}\cf0\par
+\cf2\tab\tab  \cf0\par
+\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf4 args\cf2 ) \{\cf0\par
+\cf2\tab Array \cf4 arl\cf2 =\cf1\b new\cf2\b0  Array(10);\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array content are : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array size :"\cf2 +\cf4 arl\cf2 .count());\cf0\par
+\cf2\tab\cf5 //System.out.println("array capacity :"+arl.c);\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array reverse : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab Array \cf4\ul a1\cf2\ulnone =\cf1\b new\cf2\b0  Array();\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(1);\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(2);\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(3);\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(4);\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(5);\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(6);\cf0\par
+\cf2\tab\cf4 arl\cf2 .add(7);\cf0\par
+\cf2\tab\cf4 arl\cf2 .reverse();\cf0\par
+\cf2\tab\cf4 arl\cf2 .insertbetween(3,4);\cf0\par
+\cf2\tab\cf4 arl\cf2 .deletebetween(3);\cf0\par
+\cf2\tab\cf4 arl\cf2 .remove();\cf0\par
+\cf5 //\ul int\ulnone  c[]=a1.\ul concate\ulnone (\ul arl\ulnone ,a1);\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array content are : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array size :"\cf2 +\cf4 arl\cf2 .count());\cf0\par
+\cf2\tab\cf4 arl\cf2 .remove();\cf0\par
+\cf2\tab\cf4 arl\cf2 .remove();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array content are : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array size :"\cf2 +\cf4 arl\cf2 .count());\cf0\par
+\cf2\tab\cf4 arl\cf2 .insertbetween(1, 8);\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array content are : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array size :"\cf2 +\cf4 arl\cf2 .count());\cf0\par
+\cf2\tab\cf4 arl\cf2 .deletebetween(1);\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array content are : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array size :"\cf2 +\cf4 arl\cf2 .count());\cf0\par
+\cf2\tab\cf4 arl\cf2 .deletebetween(2);\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .print(\cf6 "array content are : "\cf2 );\cf0\par
+\cf2\tab\cf4 arl\cf2 .display();\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf6 "array size :"\cf2 +\cf4 arl\cf2 .count());\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\f1\fs22\par
+}
+ 
